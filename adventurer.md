@@ -4,6 +4,15 @@ Let's make this more realistic. In the Explorer mode version, you had to constru
 
 Your models should know the make (Ford), the model (Mustang), the generation (2005-2014 5th Generation Mustang) the trim (GT) and the color options. Keep in mind that trim and color options change between generations. You should be trying to provide the maximum amount of information possible for each section so that if we wanted to present a page on the Mustang as a whole across all generations there would be _something_ to show the user.
 
+## Colors Model
+1. id - number - the unique identifier for a particular color
+2. name - string - the name assigned to this color
+
+## GenerationColor Model
+1. generation_id - number - a specific generation, may have many colors, contains make_id which contains model_id
+2. color_id - number - a specific color, may belong to many generations
+
+
 
 
 # Quest 2 - Reddit Clone
